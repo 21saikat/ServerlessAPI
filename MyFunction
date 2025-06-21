@@ -1,0 +1,10 @@
+import logging
+import azure.functions as func
+
+app = func.FunctionApp()
+
+@app.function_name(name="MyFunctionUnique")
+@app.route(route="myfunction", auth_level=func.AuthLevel.ANONYMOUS)
+def my_function(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('Processing request...')
+    return func.HttpResponse("Hello from MyFunctionUnique!", status_code=200)
