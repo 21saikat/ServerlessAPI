@@ -2,21 +2,24 @@
 
 This project contains a simple serverless API built with Azure Functions and Python.
 
-## Function
+## 🔧 Function
 
-**Route:** `/api/myfunction`  
-**Method:** `GET` or `POST`  
-**Response:** `Hello from MyFunctionUnique!`
+- **Route:** `/api/myfunction`  
+- **Method:** `GET` or `POST`  
+- **Response:** `Hello from MyFunctionUnique!`
 
-## Run Locally
+## 🚀 Run Locally
 
-```bash
+Make sure Azure Functions Core Tools is installed, then:
+
+
 func start
 
 
 
 
-Deploy
+📤 Deploy to Azure
+Run the following to deploy your function app to Azure:
 
 func azure functionapp publish serverlessapiapp
 
@@ -24,15 +27,12 @@ func azure functionapp publish serverlessapiapp
 
 
 
-
----
-
-Now your structure looks like this:
+📁 Project Structure
 
 ServerlessAPI/
 ├── MyFunction/
-│ ├── init.py
-│ ├── function.json
+│   ├── __init__.py
+│   ├── function.json
 ├── host.json
 ├── requirements.txt
 ├── .gitignore
@@ -40,17 +40,8 @@ ServerlessAPI/
 
 
 
+Author
+Ibne Sabid Saikat
 
 
----
-
-### ✅ Final Step: Initialize Git & Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Azure Function app with Python HTTP trigger"
-git remote add origin https://github.com/YOUR_USERNAME/ServerlessAPI.git
-git branch -M main
-git push -u origin main
 
